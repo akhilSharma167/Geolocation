@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+    <style>
+    @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+
+*{
+  margin:0;
+  padding:0;
+  /* box-sizing:border-box; */
+  font-family: "Be Vietnam Pro", sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  --bgOrange: #e84949;
+  --primary-shade-40: #37135b;
+  --primary-shade-80: #12061e;
+  --gc1: var(--primary-shade-40);
+  --gc2: var(--primary-shade-80);
+}
+body{
+    /* background: url("gradient-dark-blue-futuristic-digital-background.jpg") center/cover;
+    
+    background: url("dark-blue-product-background.jpg") center/cover; */
+
+    background-color:#99fff3;
+background-image:
+radial-gradient(at 26% 99%, hsla(179,77%,65%,1) 0px, transparent 50%),
+radial-gradient(at 76% 14%, hsla(227,86%,76%,1) 0px, transparent 50%),
+radial-gradient(at 69% 81%, hsla(263,91%,73%,1) 0px, transparent 50%),
+radial-gradient(at 86% 72%, hsla(208,66%,63%,1) 0px, transparent 50%),
+radial-gradient(at 28% 78%, hsla(10,82%,74%,1) 0px, transparent 50%),
+radial-gradient(at 85% 47%, hsla(251,69%,61%,1) 0px, transparent 50%),
+radial-gradient(at 76% 33%, hsla(335,71%,62%,1) 0px, transparent 50%);
+
+
+/* background-image: radial-gradient(var(--gc1),var(--gc2)); */
+} 
+
+.container{
+    width:1200px;
+    margin:0 auto;
+}
+
+#wrapper{
+    height:100vh;
+    overflow-y:auto;
+    overflow-x: hidden;
+
+   
+}
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding-top:1rem;
+}
+
+.logo{
+    width:80px;
+}
+
+.logo-container{
+    display:flex;
+    justify-content: baseline;
+    align-items: center;
+    
+}
+
+.logo-text{
+    margin-left:-0rem;
+    font-size:28px;
+    color: grey;
+}
+
+.nav-items{
+    display:flex;
+    gap:4rem;
+    padding: 0 4em;
+}
+
+.nav-items div{
+    font-size:20px;
+    font-weight:500;
+    cursor:pointer;
+   
+}
+.nav-items div a{
+    /* color:black; */
+    color: gray;
+    /* transition: all 5s ease; */
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.nav-items div:hover{
+    transition:0.8s;
+    font-weight: bold;
+}
+.hero-section{
+    position: relative;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    padding-bottom: 8rem;
+    
+}
+.hero-section-left
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    
+}
+
+
+
+.hero-section-heading{
+    font-size: 35px;
+    /* color: #343d68; */
+    color: #343d68;
+    font-weight: 450;
+    text-align: center;
+}
+.hero-section-sub-heading
+{
+    line-height: 45px;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+.role{
+    color: #4e45d5;
+    font-weight: 600;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+
+
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* background: url(DSC_0962.JPG) center / cover; */
+    /* background: url(red-pin-point-isolated-white-background_120819-360.avif) center / cover;  */
+    align-items: center;
+    z-index: 0;
+
+} 
+
+
+
+main.table
+{   
+    margin-top: 50px;
+    width: 40vw;
+    height: 55vh;
+    /* width: 82vw;
+    height: 90vh; */
+    background-color: #fff5;
+    
+    backdrop-filter: blur(5px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    overflow: hidden;
+
+}
+.table_header
+{
+    width: 100%;
+    height: 11%;
+    background-color: #fff4;
+    padding: .8rem 1rem;
+}
+.table_body{
+    width: 90%;
+
+     max-height: calc(90% - 1.6rem); 
+    background-color: #fffb;
+    
+    
+    position: relative;
+
+    margin: .8rem auto;
+    border-radius: .6rem;
+    overflow: auto;
+
+}
+
+
+.table_body::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.table_body::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+
+}
+.table_body:hover:-webkit-scrollbar-thumb{
+    visibility: visible;
+
+}
+table{
+    width: 100%;
+}
+
+td img{
+
+    width: 36px;
+    height: 36px;
+    margin-right: .5rem;
+    border-radius: 50%;
+    vertical-align: middle;
+
+}
+ table,th,td{
+    padding: 1rem;
+    border-collapse: collapse;
+    text-align: left;
+    margin-left: 20px;
+    color: #343d68;
+    font-weight: 450;
+    font-size: 16px;
+}
+thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* background-color: #d5d1de; */
+   background-color:  #343d68;                                                              
+
+} 
+tbody tr:nth-child(odd)
+{
+     background-color: #0000000b;
+     
+    /* #0000000b */
+}
+
+
+tbody tr:hover{
+    background-color: #fff6;
+}
+
+
+@media(max-width: 1000px)
+{
+    td:not(:first-of-type)
+    {
+        min-width: 12.1rem;
+    }
+}
+</style>
+</head>
+<body >
+
+
+  <div id="wrapper" >
+    
+        
+    <div class="container">
+        <div class="navbar">
+            
+            <div class="logo-container">
+            
+              
+
+
+                
+                <div class="logo-text">DriveGuard</div>
+            </div>
+            
+            <div class="nav-items">
+                <div><a href="#projects">Location</a></div>
+                <div><a href="#skills">Alc. Level</a></div>
+                <!-- <div><a href="#contactme">Contact Me</a></div> -->
+            </div>
+
+        </div>
+        
+
+        <div class="hero-section">
+            <div class="ab" >
+                <div class="r"></div>
+              
+
+            
+<!-- 
+            <div class="hero-section-left">
+                <div class="hero-section-heading">DriverGuard</div> -->
+                
+
+                <div class="hero-section-description">
+                    
+
+                <main class="table">
+                    <section class="table_header">
+                        <h1>GPSCoordinate</h1>
+                    </section>
+                    <section class="table_body">
+                        <div class="table-background"></div>
+                      
+                        <table>
+                                <thead>
+        
+                                    <tr>
+                                        
+                                        
+                                        
+                                        <td><img src="latitude.jpeg" alt="" srcset=""> Latitude</td>
+                                        <td id="latitude"></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                
+                                    <tr>
+                                    
+                                        <td><img src="4947.jpg" alt="" srcset=""> Longitude</td>
+                                        <td id="longitude"></td>
+                                        <td></td>
+                                        <td></td>
+                                       
+                                        
+                                    </tr>
+                                
+                                    <tr>
+                                        
+                                        <td><img src="pngtree-vector-calendar-icon-png-image_3996159.jpg" alt="" srcset=""> Date</td>
+                                        <td id="currentDate"></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+
+                                    
+                                    <tr>
+                                        
+                                        <td><img src="20182F052F082F092F362F272F30dd13f8-5a1a-481d-abed-3da4953d421d2F06 (1).png" alt="" srcset=""> Time</td>
+                                        <td id="currentTime"></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+
+                                                                                                        
+                                                        <tr >
+                                                            <td colspan="4" style="font-size: 20px;">Click here to view the live location of the vehcile  <a id="mapLink" href="http://www.gooogle.com" target="_blank" href="#"><img src="25530.jpg" alt="" srcset=""> </a></td>
+
+                                                        </tr>
+                                                        
+                                   
+                                </tbody>
+                          
+        
+        
+             
+                        </table>
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                    </section>
+        
+            </main>
+                  
+                </div>
+                <div class="hero-section-heading hero-section-sub-heading">
+                    Click Here to View the Alcohal Level <a href="http://www.google.com">Click!</a>
+                    <!-- : <span class="role"></span> -->
+                    </div>
+                
+                
+
+
+            </div>
+           
+
+
+        
+
+
+        </div>
+    </div>
+
+   
+
+  </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Check if the Geolocation API is supported by the browser
+      if (navigator.geolocation) {
+        // Request the current position
+        navigator.geolocation.getCurrentPosition(function(position) {
+          // Callback function to handle successful position retrieval
+  
+          // Extract latitude and longitude from the position object
+          var latitude = position.coords.latitude;
+          var longitude = position.coords.longitude;
+  
+          // Update the content of HTML elements with the coordinates
+          document.getElementById("latitude").textContent += latitude;
+          document.getElementById("longitude").textContent += longitude;
+  
+          // Create a link to open Google Maps with the coordinates
+          var mapLink = document.getElementById("mapLink");
+          mapLink.href = "https://www.google.com/maps?q=" + latitude + "," + longitude;
+        //   mapLink.textContent = "Open in Google Maps";
+  
+          // Get the current date and time
+          var currentDate = new Date();
+          var currentDateString = currentDate.toDateString();
+          var currentTimeString = currentDate.toLocaleTimeString();
+  
+          // Update the content of HTML elements with the date and time
+          document.getElementById("currentDate").textContent += currentDateString;
+          document.getElementById("currentTime").textContent += currentTimeString;
+  
+        
+          
+        }, function(error) {
+          
+          console.error("Error getting geolocation:", error.message);
+        });
+      } else {
+        console.error("Geolocation is not supported by this browser.");
+      }
+    });
+  </script>
+
+
+
+</body>
+</html>
